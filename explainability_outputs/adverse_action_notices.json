@@ -1,0 +1,3102 @@
+[
+    {
+        "Client_ID": 384575,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.2832,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.2998,
+                "FeatureValue": 0.4271
+            },
+            {
+                "Feature": "Ext Source Product",
+                "RawFeatureName": "EXT_SOURCE_PRODUCT",
+                "SHAP_Contribution": 0.1543,
+                "FeatureValue": 0.0002
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1341,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.1178,
+                "FeatureValue": 0.3448
+            }
+        ]
+    },
+    {
+        "Client_ID": 214010,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.3994,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.123,
+                "FeatureValue": 17.0
+            },
+            {
+                "Feature": "Region Rating Client W City",
+                "RawFeatureName": "REGION_RATING_CLIENT_W_CITY",
+                "SHAP_Contribution": 0.0703,
+                "FeatureValue": 3.0
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.055,
+                "FeatureValue": 48946.5
+            },
+            {
+                "Feature": "Total Loan Amount",
+                "RawFeatureName": "AMT_CREDIT",
+                "SHAP_Contribution": 0.0434,
+                "FeatureValue": 1281712.5
+            }
+        ]
+    },
+    {
+        "Client_ID": 142232,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.1349,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.331,
+                "FeatureValue": 12.6568
+            },
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.288,
+                "FeatureValue": 0.4223
+            },
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.132,
+                "FeatureValue": 0.208
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0757,
+                "FeatureValue": 39109.5
+            }
+        ]
+    },
+    {
+        "Client_ID": 389171,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.6439,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.2358,
+                "FeatureValue": 0.9231
+            },
+            {
+                "Feature": "Nonlivingapartments Mode",
+                "RawFeatureName": "NONLIVINGAPARTMENTS_MODE",
+                "SHAP_Contribution": 0.1698,
+                "FeatureValue": NaN
+            },
+            {
+                "Feature": "Average Days Past Due (Historical)",
+                "RawFeatureName": "INST_AVG_DPD",
+                "SHAP_Contribution": 0.1251,
+                "FeatureValue": 29.6923
+            },
+            {
+                "Feature": "Inst Avg Days Early",
+                "RawFeatureName": "INST_AVG_DAYS_EARLY",
+                "SHAP_Contribution": 0.0691,
+                "FeatureValue": 0.0769
+            }
+        ]
+    },
+    {
+        "Client_ID": 283617,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.114,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.2247,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.1791,
+                "FeatureValue": 1.3168
+            },
+            {
+                "Feature": "Days Id Publish",
+                "RawFeatureName": "DAYS_ID_PUBLISH",
+                "SHAP_Contribution": 0.096,
+                "FeatureValue": -494.0
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.0724,
+                "FeatureValue": 19.4252
+            }
+        ]
+    },
+    {
+        "Client_ID": 362171,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.0539,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.4674,
+                "FeatureValue": 0.3766
+            },
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.176,
+                "FeatureValue": 0.1048
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1656,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Nonlivingapartments Mode",
+                "RawFeatureName": "NONLIVINGAPARTMENTS_MODE",
+                "SHAP_Contribution": 0.0826,
+                "FeatureValue": NaN
+            }
+        ]
+    },
+    {
+        "Client_ID": 180689,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.7464,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Reg City Not Live City",
+                "RawFeatureName": "REG_CITY_NOT_LIVE_CITY",
+                "SHAP_Contribution": 0.0968,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Ext Source X Employed",
+                "RawFeatureName": "EXT_SOURCE_X_EMPLOYED",
+                "SHAP_Contribution": 0.0582,
+                "FeatureValue": 0.5659
+            },
+            {
+                "Feature": "Ext Source 3 Is Missing",
+                "RawFeatureName": "EXT_SOURCE_3_IS_MISSING",
+                "SHAP_Contribution": 0.0559,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.053,
+                "FeatureValue": 4.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 310328,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.9975,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.5905,
+                "FeatureValue": 0.3363
+            },
+            {
+                "Feature": "Ext Source Product",
+                "RawFeatureName": "EXT_SOURCE_PRODUCT",
+                "SHAP_Contribution": 0.2428,
+                "FeatureValue": 0.0031
+            },
+            {
+                "Feature": "Ext Source Weighted",
+                "RawFeatureName": "EXT_SOURCE_WEIGHTED",
+                "SHAP_Contribution": 0.1546,
+                "FeatureValue": 0.2785
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.137,
+                "FeatureValue": 1.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 233043,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.0475,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.3715,
+                "FeatureValue": 0.4055
+            },
+            {
+                "Feature": "Ext Source Product",
+                "RawFeatureName": "EXT_SOURCE_PRODUCT",
+                "SHAP_Contribution": 0.1606,
+                "FeatureValue": 0.0248
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.1105,
+                "FeatureValue": 34443.0
+            },
+            {
+                "Feature": "Ext Source Weighted",
+                "RawFeatureName": "EXT_SOURCE_WEIGHTED",
+                "SHAP_Contribution": 0.07,
+                "FeatureValue": 0.3577
+            }
+        ]
+    },
+    {
+        "Client_ID": 232220,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.5804,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Ext Source 1 Is Missing",
+                "RawFeatureName": "EXT_SOURCE_1_IS_MISSING",
+                "SHAP_Contribution": 0.0916,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.0753,
+                "FeatureValue": 0.1364
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.075,
+                "FeatureValue": 35824.5
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0743,
+                "FeatureValue": 4.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 134561,
+        "Actual_Default": 1,
+        "Risk_Score_LogOdds": -0.2071,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.2176,
+                "FeatureValue": 1.4752
+            },
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.1947,
+                "FeatureValue": 0.4661
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.1317,
+                "FeatureValue": 19.4361
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.1035,
+                "FeatureValue": 8.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 120952,
+        "Actual_Default": 1,
+        "Risk_Score_LogOdds": 0.0639,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.3765,
+                "FeatureValue": 0.4008
+            },
+            {
+                "Feature": "Ext Source 1 Is Missing",
+                "RawFeatureName": "EXT_SOURCE_1_IS_MISSING",
+                "SHAP_Contribution": 0.1184,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.1125,
+                "FeatureValue": 13.0
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.1056,
+                "FeatureValue": 20.3169
+            }
+        ]
+    },
+    {
+        "Client_ID": 188909,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.2692,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.3227,
+                "FeatureValue": 0.4205
+            },
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.1728,
+                "FeatureValue": 0.1809
+            },
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.1691,
+                "FeatureValue": 18.0
+            },
+            {
+                "Feature": "Inst Avg Days Early",
+                "RawFeatureName": "INST_AVG_DAYS_EARLY",
+                "SHAP_Contribution": 0.0711,
+                "FeatureValue": 5.0297
+            }
+        ]
+    },
+    {
+        "Client_ID": 347275,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.6339,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1207,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0894,
+                "FeatureValue": 4.0
+            },
+            {
+                "Feature": "Days Id Publish",
+                "RawFeatureName": "DAYS_ID_PUBLISH",
+                "SHAP_Contribution": 0.0741,
+                "FeatureValue": -290.0
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0709,
+                "FeatureValue": 36292.5
+            }
+        ]
+    },
+    {
+        "Client_ID": 250804,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.4467,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.5056,
+                "FeatureValue": 0.368
+            },
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.1085,
+                "FeatureValue": 0.2213
+            },
+            {
+                "Feature": "Region Rating Client W City",
+                "RawFeatureName": "REGION_RATING_CLIENT_W_CITY",
+                "SHAP_Contribution": 0.1012,
+                "FeatureValue": 3.0
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.0941,
+                "FeatureValue": 1.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 348749,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.4655,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.5513,
+                "FeatureValue": 0.3407
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.1861,
+                "FeatureValue": 1.264
+            },
+            {
+                "Feature": "Ext Source Weighted",
+                "RawFeatureName": "EXT_SOURCE_WEIGHTED",
+                "SHAP_Contribution": 0.1433,
+                "FeatureValue": 0.3062
+            },
+            {
+                "Feature": "Ext Source 1 Is Missing",
+                "RawFeatureName": "EXT_SOURCE_1_IS_MISSING",
+                "SHAP_Contribution": 0.1239,
+                "FeatureValue": 1.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 231383,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -2.2641,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Inst Max Deficit",
+                "RawFeatureName": "INST_MAX_DEFICIT",
+                "SHAP_Contribution": 0.0745,
+                "FeatureValue": 39190.5
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.0601,
+                "FeatureValue": 0.0927
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0572,
+                "FeatureValue": 3.0
+            },
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.0411,
+                "FeatureValue": 11.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 119647,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.1555,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.5183,
+                "FeatureValue": 0.3947
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0967,
+                "FeatureValue": 13.0
+            },
+            {
+                "Feature": "Ext Source 1 Is Missing",
+                "RawFeatureName": "EXT_SOURCE_1_IS_MISSING",
+                "SHAP_Contribution": 0.0908,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Ext Source Weighted",
+                "RawFeatureName": "EXT_SOURCE_WEIGHTED",
+                "SHAP_Contribution": 0.0768,
+                "FeatureValue": 0.3528
+            }
+        ]
+    },
+    {
+        "Client_ID": 257374,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.1422,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0742,
+                "FeatureValue": 33259.5
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0734,
+                "FeatureValue": 6.0
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.0684,
+                "FeatureValue": 1.1584
+            },
+            {
+                "Feature": "Ext Source 3 Is Missing",
+                "RawFeatureName": "EXT_SOURCE_3_IS_MISSING",
+                "SHAP_Contribution": 0.0562,
+                "FeatureValue": 1.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 305211,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.9263,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Inst Avg Days Early",
+                "RawFeatureName": "INST_AVG_DAYS_EARLY",
+                "SHAP_Contribution": 0.0902,
+                "FeatureValue": 5.2019
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.074,
+                "FeatureValue": 1.198
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.0725,
+                "FeatureValue": 0.1538
+            },
+            {
+                "Feature": "Age Years",
+                "RawFeatureName": "AGE_YEARS",
+                "SHAP_Contribution": 0.0722,
+                "FeatureValue": 64.2738
+            }
+        ]
+    },
+    {
+        "Client_ID": 153812,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.5156,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.2105,
+                "FeatureValue": 0.4611
+            },
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.1243,
+                "FeatureValue": 13.0
+            },
+            {
+                "Feature": "Inst Rec180 Avg Dpd",
+                "RawFeatureName": "INST_REC180_AVG_DPD",
+                "SHAP_Contribution": 0.0665,
+                "FeatureValue": 0.3077
+            },
+            {
+                "Feature": "Inst Rec180 Pct Late",
+                "RawFeatureName": "INST_REC180_PCT_LATE",
+                "SHAP_Contribution": 0.0611,
+                "FeatureValue": 0.1538
+            }
+        ]
+    },
+    {
+        "Client_ID": 149325,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.2946,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.2164,
+                "FeatureValue": 0.4629
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.1201,
+                "FeatureValue": 0.125
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.1012,
+                "FeatureValue": 19.5594
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.0958,
+                "FeatureValue": 1.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 404667,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.3151,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.2849,
+                "FeatureValue": 0.4345
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.2843,
+                "FeatureValue": 1.3168
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.2101,
+                "FeatureValue": 14.7274
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.1227,
+                "FeatureValue": 2.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 114238,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.0123,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.7116,
+                "FeatureValue": 0.2706
+            },
+            {
+                "Feature": "Ext Source Product",
+                "RawFeatureName": "EXT_SOURCE_PRODUCT",
+                "SHAP_Contribution": 0.2638,
+                "FeatureValue": 0.0113
+            },
+            {
+                "Feature": "Ext Source Weighted",
+                "RawFeatureName": "EXT_SOURCE_WEIGHTED",
+                "SHAP_Contribution": 0.2042,
+                "FeatureValue": 0.2203
+            },
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.1423,
+                "FeatureValue": 0.1907
+            }
+        ]
+    },
+    {
+        "Client_ID": 373414,
+        "Actual_Default": 1,
+        "Risk_Score_LogOdds": 1.0668,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.4424,
+                "FeatureValue": 0.3631
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.2291,
+                "FeatureValue": 1.4224
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.1898,
+                "FeatureValue": 20.4024
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.0669,
+                "FeatureValue": 0.24
+            }
+        ]
+    },
+    {
+        "Client_ID": 188388,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.1734,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.2613,
+                "FeatureValue": 0.4202
+            },
+            {
+                "Feature": "Amt Goods Price",
+                "RawFeatureName": "AMT_GOODS_PRICE",
+                "SHAP_Contribution": 0.1249,
+                "FeatureValue": 450000.0
+            },
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.0959,
+                "FeatureValue": 0.1998
+            },
+            {
+                "Feature": "Nonlivingapartments Mode",
+                "RawFeatureName": "NONLIVINGAPARTMENTS_MODE",
+                "SHAP_Contribution": 0.0885,
+                "FeatureValue": NaN
+            }
+        ]
+    },
+    {
+        "Client_ID": 231929,
+        "Actual_Default": 1,
+        "Risk_Score_LogOdds": 0.3722,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.3986,
+                "FeatureValue": 0.4063
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.122,
+                "FeatureValue": 19.5367
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0915,
+                "FeatureValue": 13.0
+            },
+            {
+                "Feature": "Days Id Publish",
+                "RawFeatureName": "DAYS_ID_PUBLISH",
+                "SHAP_Contribution": 0.0836,
+                "FeatureValue": -380.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 288831,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.0168,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.1673,
+                "FeatureValue": 18.3187
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.0878,
+                "FeatureValue": 1.1584
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.0798,
+                "FeatureValue": 0.2174
+            },
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.0614,
+                "FeatureValue": 12.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 111556,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.1786,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.3098,
+                "FeatureValue": 0.4292
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1502,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Ext Source 1 Is Missing",
+                "RawFeatureName": "EXT_SOURCE_1_IS_MISSING",
+                "SHAP_Contribution": 0.0898,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0786,
+                "FeatureValue": 30766.5
+            }
+        ]
+    },
+    {
+        "Client_ID": 199643,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -2.2258,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Flag Work Phone",
+                "RawFeatureName": "FLAG_WORK_PHONE",
+                "SHAP_Contribution": 0.1581,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.0917,
+                "FeatureValue": 19.5848
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0859,
+                "FeatureValue": 34465.5
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0578,
+                "FeatureValue": 12.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 120657,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.0486,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.346,
+                "FeatureValue": 0.4094
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.1674,
+                "FeatureValue": 12.6277
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.1036,
+                "FeatureValue": 10.0
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.1007,
+                "FeatureValue": 56533.5
+            }
+        ]
+    },
+    {
+        "Client_ID": 439579,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.9574,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Days Id Publish",
+                "RawFeatureName": "DAYS_ID_PUBLISH",
+                "SHAP_Contribution": 0.1095,
+                "FeatureValue": -590.0
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.1078,
+                "FeatureValue": 3.0
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.0791,
+                "FeatureValue": 20.0
+            },
+            {
+                "Feature": "Ext Source 3 Is Missing",
+                "RawFeatureName": "EXT_SOURCE_3_IS_MISSING",
+                "SHAP_Contribution": 0.0725,
+                "FeatureValue": 1.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 361223,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.7309,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.2413,
+                "FeatureValue": 0.4415
+            },
+            {
+                "Feature": "Def 30 Cnt Social Circle",
+                "RawFeatureName": "DEF_30_CNT_SOCIAL_CIRCLE",
+                "SHAP_Contribution": 0.0999,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Landarea Mode",
+                "RawFeatureName": "LANDAREA_MODE",
+                "SHAP_Contribution": 0.0676,
+                "FeatureValue": NaN
+            },
+            {
+                "Feature": "Ext Source X Employed",
+                "RawFeatureName": "EXT_SOURCE_X_EMPLOYED",
+                "SHAP_Contribution": 0.0501,
+                "FeatureValue": 0.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 345983,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.8277,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1366,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0726,
+                "FeatureValue": 59566.5
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0687,
+                "FeatureValue": 4.0
+            },
+            {
+                "Feature": "Nonlivingapartments Mode",
+                "RawFeatureName": "NONLIVINGAPARTMENTS_MODE",
+                "SHAP_Contribution": 0.0618,
+                "FeatureValue": NaN
+            }
+        ]
+    },
+    {
+        "Client_ID": 284103,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.0041,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.4191,
+                "FeatureValue": 0.4018
+            },
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.2249,
+                "FeatureValue": 0.1261
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.2028,
+                "FeatureValue": 12.6582
+            },
+            {
+                "Feature": "Flag Work Phone",
+                "RawFeatureName": "FLAG_WORK_PHONE",
+                "SHAP_Contribution": 0.074,
+                "FeatureValue": 1.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 280677,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.1855,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.1212,
+                "FeatureValue": 18.2415
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0582,
+                "FeatureValue": 12.0
+            },
+            {
+                "Feature": "Flag Document 3",
+                "RawFeatureName": "FLAG_DOCUMENT_3",
+                "SHAP_Contribution": 0.0307,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Region Population Relative",
+                "RawFeatureName": "REGION_POPULATION_RELATIVE",
+                "SHAP_Contribution": 0.0255,
+                "FeatureValue": 0.0264
+            }
+        ]
+    },
+    {
+        "Client_ID": 378518,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.8721,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.2763,
+                "FeatureValue": 0.4264
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.0736,
+                "FeatureValue": 20.0
+            },
+            {
+                "Feature": "Amt Goods Price",
+                "RawFeatureName": "AMT_GOODS_PRICE",
+                "SHAP_Contribution": 0.0651,
+                "FeatureValue": 405000.0
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.0623,
+                "FeatureValue": 0.1163
+            }
+        ]
+    },
+    {
+        "Client_ID": 425522,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.0372,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.0925,
+                "FeatureValue": 19.3867
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0769,
+                "FeatureValue": 4.0
+            },
+            {
+                "Feature": "Ext Source X Employed",
+                "RawFeatureName": "EXT_SOURCE_X_EMPLOYED",
+                "SHAP_Contribution": 0.0624,
+                "FeatureValue": 1.3742
+            },
+            {
+                "Feature": "Flag Work Phone",
+                "RawFeatureName": "FLAG_WORK_PHONE",
+                "SHAP_Contribution": 0.0607,
+                "FeatureValue": 1.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 390314,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.311,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.0929,
+                "FeatureValue": 1.198
+            },
+            {
+                "Feature": "Days Registration",
+                "RawFeatureName": "DAYS_REGISTRATION",
+                "SHAP_Contribution": 0.0562,
+                "FeatureValue": -833.0
+            },
+            {
+                "Feature": "Ext Source X Employed",
+                "RawFeatureName": "EXT_SOURCE_X_EMPLOYED",
+                "SHAP_Contribution": 0.0549,
+                "FeatureValue": 0.0
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0532,
+                "FeatureValue": 4.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 160738,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.0801,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.1375,
+                "FeatureValue": 1.2112
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.1201,
+                "FeatureValue": 0.283
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.0993,
+                "FeatureValue": 20.5602
+            },
+            {
+                "Feature": "Amt Goods Price",
+                "RawFeatureName": "AMT_GOODS_PRICE",
+                "SHAP_Contribution": 0.0963,
+                "FeatureValue": 450000.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 389904,
+        "Actual_Default": 1,
+        "Risk_Score_LogOdds": -1.5913,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.231,
+                "FeatureValue": 12.6594
+            },
+            {
+                "Feature": "Payment Burden Index",
+                "RawFeatureName": "PAYMENT_BURDEN_INDEX",
+                "SHAP_Contribution": 0.1124,
+                "FeatureValue": 0.3163
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0981,
+                "FeatureValue": 10.0
+            },
+            {
+                "Feature": "Reg City Not Live City",
+                "RawFeatureName": "REG_CITY_NOT_LIVE_CITY",
+                "SHAP_Contribution": 0.0732,
+                "FeatureValue": 1.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 123258,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.8556,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.0756,
+                "FeatureValue": 20.0
+            },
+            {
+                "Feature": "Ext Source X Employed",
+                "RawFeatureName": "EXT_SOURCE_X_EMPLOYED",
+                "SHAP_Contribution": 0.0454,
+                "FeatureValue": 1.1509
+            },
+            {
+                "Feature": "Flag Own Car",
+                "RawFeatureName": "FLAG_OWN_CAR",
+                "SHAP_Contribution": 0.0341,
+                "FeatureValue": 0.0
+            },
+            {
+                "Feature": "Employment To Age Ratio",
+                "RawFeatureName": "EMPLOYMENT_TO_AGE_RATIO",
+                "SHAP_Contribution": 0.0227,
+                "FeatureValue": 0.0701
+            }
+        ]
+    },
+    {
+        "Client_ID": 152796,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.8997,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.2518,
+                "FeatureValue": 0.4354
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1271,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Nonlivingapartments Mode",
+                "RawFeatureName": "NONLIVINGAPARTMENTS_MODE",
+                "SHAP_Contribution": 0.0737,
+                "FeatureValue": NaN
+            },
+            {
+                "Feature": "Ext Source X Employed",
+                "RawFeatureName": "EXT_SOURCE_X_EMPLOYED",
+                "SHAP_Contribution": 0.0588,
+                "FeatureValue": 0.8416
+            }
+        ]
+    },
+    {
+        "Client_ID": 134391,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 1.3517,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.31,
+                "FeatureValue": 0.4354
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.2482,
+                "FeatureValue": 1.3168
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.1711,
+                "FeatureValue": 18.3603
+            },
+            {
+                "Feature": "Ext Source 1 Is Missing",
+                "RawFeatureName": "EXT_SOURCE_1_IS_MISSING",
+                "SHAP_Contribution": 0.131,
+                "FeatureValue": 1.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 349402,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.9742,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.224,
+                "FeatureValue": 1.4224
+            },
+            {
+                "Feature": "Landarea Mode",
+                "RawFeatureName": "LANDAREA_MODE",
+                "SHAP_Contribution": 0.0777,
+                "FeatureValue": NaN
+            },
+            {
+                "Feature": "Ext Source X Employed",
+                "RawFeatureName": "EXT_SOURCE_X_EMPLOYED",
+                "SHAP_Contribution": 0.0581,
+                "FeatureValue": 0.3052
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0552,
+                "FeatureValue": 4.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 196937,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.7735,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0717,
+                "FeatureValue": 4.0
+            },
+            {
+                "Feature": "Days Id Publish",
+                "RawFeatureName": "DAYS_ID_PUBLISH",
+                "SHAP_Contribution": 0.0596,
+                "FeatureValue": -488.0
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0489,
+                "FeatureValue": 28728.0
+            },
+            {
+                "Feature": "Inst Max Deficit",
+                "RawFeatureName": "INST_MAX_DEFICIT",
+                "SHAP_Contribution": 0.0432,
+                "FeatureValue": 22846.0957
+            }
+        ]
+    },
+    {
+        "Client_ID": 292484,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.3803,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.127,
+                "FeatureValue": 19.6206
+            },
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.1269,
+                "FeatureValue": 0.1429
+            },
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.1155,
+                "FeatureValue": 0.4683
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.1139,
+                "FeatureValue": 0.2667
+            }
+        ]
+    },
+    {
+        "Client_ID": 160044,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -2.045,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1279,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0647,
+                "FeatureValue": 48501.0
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0576,
+                "FeatureValue": 4.0
+            },
+            {
+                "Feature": "Flag Own Car",
+                "RawFeatureName": "FLAG_OWN_CAR",
+                "SHAP_Contribution": 0.0522,
+                "FeatureValue": 0.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 138523,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -2.3751,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.0806,
+                "FeatureValue": 1.1584
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0725,
+                "FeatureValue": 12.0
+            },
+            {
+                "Feature": "Days Id Publish",
+                "RawFeatureName": "DAYS_ID_PUBLISH",
+                "SHAP_Contribution": 0.0694,
+                "FeatureValue": -888.0
+            },
+            {
+                "Feature": "Days Last Phone Change",
+                "RawFeatureName": "DAYS_LAST_PHONE_CHANGE",
+                "SHAP_Contribution": 0.0573,
+                "FeatureValue": 0.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 209865,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.6495,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0527,
+                "FeatureValue": 4.0
+            },
+            {
+                "Feature": "Name Family Status",
+                "RawFeatureName": "NAME_FAMILY_STATUS",
+                "SHAP_Contribution": 0.0526,
+                "FeatureValue": 3.0
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0514,
+                "FeatureValue": 15.0
+            },
+            {
+                "Feature": "Region Population Relative",
+                "RawFeatureName": "REGION_POPULATION_RELATIVE",
+                "SHAP_Contribution": 0.0482,
+                "FeatureValue": 0.0287
+            }
+        ]
+    },
+    {
+        "Client_ID": 297401,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.3893,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.2531,
+                "FeatureValue": 0.43
+            },
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.1097,
+                "FeatureValue": 11.0
+            },
+            {
+                "Feature": "Inst Rec180 Pct Late",
+                "RawFeatureName": "INST_REC180_PCT_LATE",
+                "SHAP_Contribution": 0.0771,
+                "FeatureValue": 0.1818
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.0606,
+                "FeatureValue": 1.198
+            }
+        ]
+    },
+    {
+        "Client_ID": 155773,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.1398,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.2343,
+                "FeatureValue": 17.0
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.2267,
+                "FeatureValue": 1.396
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.1166,
+                "FeatureValue": 18.0946
+            },
+            {
+                "Feature": "Inst Rec180 Pct Late",
+                "RawFeatureName": "INST_REC180_PCT_LATE",
+                "SHAP_Contribution": 0.0828,
+                "FeatureValue": 0.1176
+            }
+        ]
+    },
+    {
+        "Client_ID": 387025,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.0183,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.4811,
+                "FeatureValue": 0.3948
+            },
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.1458,
+                "FeatureValue": 0.1852
+            },
+            {
+                "Feature": "Income Per Family Member",
+                "RawFeatureName": "INCOME_PER_FAMILY_MEMBER",
+                "SHAP_Contribution": 0.0721,
+                "FeatureValue": 1012500.0
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0605,
+                "FeatureValue": 4.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 337101,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.125,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.6993,
+                "FeatureValue": 0.2627
+            },
+            {
+                "Feature": "Ext Source Product",
+                "RawFeatureName": "EXT_SOURCE_PRODUCT",
+                "SHAP_Contribution": 0.3089,
+                "FeatureValue": 0.0068
+            },
+            {
+                "Feature": "Ext Source Weighted",
+                "RawFeatureName": "EXT_SOURCE_WEIGHTED",
+                "SHAP_Contribution": 0.1987,
+                "FeatureValue": 0.2305
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.0938,
+                "FeatureValue": 20.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 322386,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.1552,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.458,
+                "FeatureValue": 0.3962
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.0898,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0805,
+                "FeatureValue": 35824.5
+            },
+            {
+                "Feature": "Days Registration",
+                "RawFeatureName": "DAYS_REGISTRATION",
+                "SHAP_Contribution": 0.0638,
+                "FeatureValue": -255.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 338300,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.5876,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.4043,
+                "FeatureValue": 0.4059
+            },
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.1617,
+                "FeatureValue": 0.1929
+            },
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.0546,
+                "FeatureValue": 13.0
+            },
+            {
+                "Feature": "Inst Avg Days Early",
+                "RawFeatureName": "INST_AVG_DAYS_EARLY",
+                "SHAP_Contribution": 0.0478,
+                "FeatureValue": 5.7812
+            }
+        ]
+    },
+    {
+        "Client_ID": 379443,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.2198,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1459,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.1024,
+                "FeatureValue": 41629.5
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.0914,
+                "FeatureValue": 0.1935
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0673,
+                "FeatureValue": 4.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 129426,
+        "Actual_Default": 1,
+        "Risk_Score_LogOdds": 1.3446,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.5942,
+                "FeatureValue": 0.2906
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.2057,
+                "FeatureValue": 12.6569
+            },
+            {
+                "Feature": "Ext Source Weighted",
+                "RawFeatureName": "EXT_SOURCE_WEIGHTED",
+                "SHAP_Contribution": 0.1843,
+                "FeatureValue": 0.2341
+            },
+            {
+                "Feature": "Ext Source Product",
+                "RawFeatureName": "EXT_SOURCE_PRODUCT",
+                "SHAP_Contribution": 0.1761,
+                "FeatureValue": 0.0078
+            }
+        ]
+    },
+    {
+        "Client_ID": 277039,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.9175,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.172,
+                "FeatureValue": 28.0
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.1551,
+                "FeatureValue": 18.3725
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1339,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Inst Avg Days Early",
+                "RawFeatureName": "INST_AVG_DAYS_EARLY",
+                "SHAP_Contribution": 0.0893,
+                "FeatureValue": 4.3488
+            }
+        ]
+    },
+    {
+        "Client_ID": 450086,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.9066,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.1476,
+                "FeatureValue": 1.198
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.1052,
+                "FeatureValue": 31653.0
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.086,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0625,
+                "FeatureValue": 4.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 276602,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.0184,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.2993,
+                "FeatureValue": 0.4539
+            },
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.1096,
+                "FeatureValue": 0.2822
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.0982,
+                "FeatureValue": 1.2112
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0629,
+                "FeatureValue": 0.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 138400,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.8005,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.4019,
+                "FeatureValue": 0.4014
+            },
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.2037,
+                "FeatureValue": 19.0
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1116,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Inst Avg Days Early",
+                "RawFeatureName": "INST_AVG_DAYS_EARLY",
+                "SHAP_Contribution": 0.1058,
+                "FeatureValue": 4.5938
+            }
+        ]
+    },
+    {
+        "Client_ID": 211463,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.5442,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.1504,
+                "FeatureValue": 1.2112
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1463,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0833,
+                "FeatureValue": 30649.5
+            },
+            {
+                "Feature": "Amt Goods Price",
+                "RawFeatureName": "AMT_GOODS_PRICE",
+                "SHAP_Contribution": 0.0781,
+                "FeatureValue": 387000.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 114666,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.5288,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.1471,
+                "FeatureValue": 0.2292
+            },
+            {
+                "Feature": "Nonlivingapartments Mode",
+                "RawFeatureName": "NONLIVINGAPARTMENTS_MODE",
+                "SHAP_Contribution": 0.1009,
+                "FeatureValue": NaN
+            },
+            {
+                "Feature": "Inst Avg Payment Ratio",
+                "RawFeatureName": "INST_AVG_PAYMENT_RATIO",
+                "SHAP_Contribution": 0.074,
+                "FeatureValue": 0.8958
+            },
+            {
+                "Feature": "Flag Work Phone",
+                "RawFeatureName": "FLAG_WORK_PHONE",
+                "SHAP_Contribution": 0.0697,
+                "FeatureValue": 1.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 124477,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.255,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0661,
+                "FeatureValue": 31059.0
+            },
+            {
+                "Feature": "Nonlivingapartments Mode",
+                "RawFeatureName": "NONLIVINGAPARTMENTS_MODE",
+                "SHAP_Contribution": 0.0623,
+                "FeatureValue": NaN
+            },
+            {
+                "Feature": "Flag Own Car",
+                "RawFeatureName": "FLAG_OWN_CAR",
+                "SHAP_Contribution": 0.0578,
+                "FeatureValue": 0.0
+            },
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.0502,
+                "FeatureValue": 0.4806
+            }
+        ]
+    },
+    {
+        "Client_ID": 165205,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.2596,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.1269,
+                "FeatureValue": 0.2926
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.1055,
+                "FeatureValue": 0.0959
+            },
+            {
+                "Feature": "Inst Avg Days Early",
+                "RawFeatureName": "INST_AVG_DAYS_EARLY",
+                "SHAP_Contribution": 0.1032,
+                "FeatureValue": 4.411
+            },
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.0822,
+                "FeatureValue": 13.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 343760,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -2.7641,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1331,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.0838,
+                "FeatureValue": 0.0968
+            },
+            {
+                "Feature": "Inst Dpd Velocity",
+                "RawFeatureName": "INST_DPD_VELOCITY",
+                "SHAP_Contribution": 0.0443,
+                "FeatureValue": 0.0276
+            },
+            {
+                "Feature": "Inst Rec180 Pct Late",
+                "RawFeatureName": "INST_REC180_PCT_LATE",
+                "SHAP_Contribution": 0.0429,
+                "FeatureValue": 0.1429
+            }
+        ]
+    },
+    {
+        "Client_ID": 140623,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": 0.061,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.2194,
+                "FeatureValue": 0.4615
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.1842,
+                "FeatureValue": 10.8116
+            },
+            {
+                "Feature": "Average Days Past Due (Historical)",
+                "RawFeatureName": "INST_AVG_DPD",
+                "SHAP_Contribution": 0.0785,
+                "FeatureValue": 10.4615
+            },
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.0751,
+                "FeatureValue": 0.4791
+            }
+        ]
+    },
+    {
+        "Client_ID": 143311,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.5516,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.2386,
+                "FeatureValue": 0.3889
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.1673,
+                "FeatureValue": 1.528
+            },
+            {
+                "Feature": "Ext Source X Employed",
+                "RawFeatureName": "EXT_SOURCE_X_EMPLOYED",
+                "SHAP_Contribution": 0.0604,
+                "FeatureValue": 1.409
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0592,
+                "FeatureValue": 4.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 185989,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.1053,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.2986,
+                "FeatureValue": 0.4347
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1706,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Name Family Status",
+                "RawFeatureName": "NAME_FAMILY_STATUS",
+                "SHAP_Contribution": 0.0961,
+                "FeatureValue": 3.0
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0927,
+                "FeatureValue": 6.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 298045,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.7309,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.1529,
+                "FeatureValue": 0.3611
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0954,
+                "FeatureValue": 33084.0
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.0899,
+                "FeatureValue": 20.7052
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.0791,
+                "FeatureValue": 1.2376
+            }
+        ]
+    },
+    {
+        "Client_ID": 112205,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.9856,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.4329,
+                "FeatureValue": 0.362
+            },
+            {
+                "Feature": "Flag Work Phone",
+                "RawFeatureName": "FLAG_WORK_PHONE",
+                "SHAP_Contribution": 0.0997,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Ext Source Product",
+                "RawFeatureName": "EXT_SOURCE_PRODUCT",
+                "SHAP_Contribution": 0.0974,
+                "FeatureValue": 0.0325
+            },
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.089,
+                "FeatureValue": 0.1746
+            }
+        ]
+    },
+    {
+        "Client_ID": 189803,
+        "Actual_Default": 1,
+        "Risk_Score_LogOdds": 0.6126,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.5758,
+                "FeatureValue": 0.277
+            },
+            {
+                "Feature": "Ext Source Product",
+                "RawFeatureName": "EXT_SOURCE_PRODUCT",
+                "SHAP_Contribution": 0.1768,
+                "FeatureValue": 0.0153
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.1601,
+                "FeatureValue": 0.4333
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.1475,
+                "FeatureValue": 1.3168
+            }
+        ]
+    },
+    {
+        "Client_ID": 342139,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.9037,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.0681,
+                "FeatureValue": 12.0
+            },
+            {
+                "Feature": "Days Id Publish",
+                "RawFeatureName": "DAYS_ID_PUBLISH",
+                "SHAP_Contribution": 0.0664,
+                "FeatureValue": -1253.0
+            },
+            {
+                "Feature": "Name Family Status",
+                "RawFeatureName": "NAME_FAMILY_STATUS",
+                "SHAP_Contribution": 0.0521,
+                "FeatureValue": 3.0
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0505,
+                "FeatureValue": 4.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 213028,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.121,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1294,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Days Id Publish",
+                "RawFeatureName": "DAYS_ID_PUBLISH",
+                "SHAP_Contribution": 0.1289,
+                "FeatureValue": -159.0
+            },
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.1154,
+                "FeatureValue": 14.0
+            },
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.1029,
+                "FeatureValue": 20.682
+            }
+        ]
+    },
+    {
+        "Client_ID": 357624,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.1273,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.2456,
+                "FeatureValue": 1.396
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0908,
+                "FeatureValue": 36864.0
+            },
+            {
+                "Feature": "Payment Burden Index",
+                "RawFeatureName": "PAYMENT_BURDEN_INDEX",
+                "SHAP_Contribution": 0.085,
+                "FeatureValue": 0.3812
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0683,
+                "FeatureValue": 6.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 422659,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.7541,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.2311,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Days Id Publish",
+                "RawFeatureName": "DAYS_ID_PUBLISH",
+                "SHAP_Contribution": 0.0724,
+                "FeatureValue": -773.0
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0636,
+                "FeatureValue": 4.0
+            },
+            {
+                "Feature": "Flag Own Car",
+                "RawFeatureName": "FLAG_OWN_CAR",
+                "SHAP_Contribution": 0.0628,
+                "FeatureValue": 0.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 334791,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -2.0441,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0603,
+                "FeatureValue": 5.0
+            },
+            {
+                "Feature": "Ext Source X Employed",
+                "RawFeatureName": "EXT_SOURCE_X_EMPLOYED",
+                "SHAP_Contribution": 0.0426,
+                "FeatureValue": 0.0
+            },
+            {
+                "Feature": "Amt Goods Price",
+                "RawFeatureName": "AMT_GOODS_PRICE",
+                "SHAP_Contribution": 0.0394,
+                "FeatureValue": 225000.0
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0356,
+                "FeatureValue": 4.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 430775,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -2.023,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.0835,
+                "FeatureValue": 20.79
+            },
+            {
+                "Feature": "Def 30 Cnt Social Circle",
+                "RawFeatureName": "DEF_30_CNT_SOCIAL_CIRCLE",
+                "SHAP_Contribution": 0.0594,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Inst Max Deficit",
+                "RawFeatureName": "INST_MAX_DEFICIT",
+                "SHAP_Contribution": 0.0525,
+                "FeatureValue": 14107.2754
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0503,
+                "FeatureValue": 4.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 266456,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.3589,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Days Id Publish",
+                "RawFeatureName": "DAYS_ID_PUBLISH",
+                "SHAP_Contribution": 0.087,
+                "FeatureValue": -484.0
+            },
+            {
+                "Feature": "Amt Goods Price",
+                "RawFeatureName": "AMT_GOODS_PRICE",
+                "SHAP_Contribution": 0.0612,
+                "FeatureValue": 391500.0
+            },
+            {
+                "Feature": "Basementarea Medi",
+                "RawFeatureName": "BASEMENTAREA_MEDI",
+                "SHAP_Contribution": 0.058,
+                "FeatureValue": NaN
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0525,
+                "FeatureValue": 4.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 112836,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -2.0195,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1075,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0777,
+                "FeatureValue": 52321.5
+            },
+            {
+                "Feature": "Employment To Age Ratio",
+                "RawFeatureName": "EMPLOYMENT_TO_AGE_RATIO",
+                "SHAP_Contribution": 0.0611,
+                "FeatureValue": 0.0212
+            },
+            {
+                "Feature": "Name Family Status",
+                "RawFeatureName": "NAME_FAMILY_STATUS",
+                "SHAP_Contribution": 0.057,
+                "FeatureValue": 0.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 430776,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.0481,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.2599,
+                "FeatureValue": 0.65
+            },
+            {
+                "Feature": "Average Days Past Due (Historical)",
+                "RawFeatureName": "INST_AVG_DPD",
+                "SHAP_Contribution": 0.101,
+                "FeatureValue": 8.9
+            },
+            {
+                "Feature": "Flag Work Phone",
+                "RawFeatureName": "FLAG_WORK_PHONE",
+                "SHAP_Contribution": 0.0984,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Payment Burden Index",
+                "RawFeatureName": "PAYMENT_BURDEN_INDEX",
+                "SHAP_Contribution": 0.0834,
+                "FeatureValue": 0.3796
+            }
+        ]
+    },
+    {
+        "Client_ID": 401108,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.9097,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0758,
+                "FeatureValue": 53253.0
+            },
+            {
+                "Feature": "Flag Own Car",
+                "RawFeatureName": "FLAG_OWN_CAR",
+                "SHAP_Contribution": 0.0588,
+                "FeatureValue": 0.0
+            },
+            {
+                "Feature": "Payment Burden Index",
+                "RawFeatureName": "PAYMENT_BURDEN_INDEX",
+                "SHAP_Contribution": 0.0504,
+                "FeatureValue": 0.2942
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0459,
+                "FeatureValue": 4.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 266876,
+        "Actual_Default": 1,
+        "Risk_Score_LogOdds": -0.6896,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.1087,
+                "FeatureValue": 0.1
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.107,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.078,
+                "FeatureValue": 48631.5
+            },
+            {
+                "Feature": "Ext Source X Employed",
+                "RawFeatureName": "EXT_SOURCE_X_EMPLOYED",
+                "SHAP_Contribution": 0.0561,
+                "FeatureValue": 0.2764
+            }
+        ]
+    },
+    {
+        "Client_ID": 193089,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.1085,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.4163,
+                "FeatureValue": 0.3741
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1045,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Flag Work Phone",
+                "RawFeatureName": "FLAG_WORK_PHONE",
+                "SHAP_Contribution": 0.0806,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Ext Source X Employed",
+                "RawFeatureName": "EXT_SOURCE_X_EMPLOYED",
+                "SHAP_Contribution": 0.0743,
+                "FeatureValue": 0.886
+            }
+        ]
+    },
+    {
+        "Client_ID": 125751,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.7043,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.1005,
+                "FeatureValue": 19.4798
+            },
+            {
+                "Feature": "Percentage of Late Payments",
+                "RawFeatureName": "INST_PCT_LATE",
+                "SHAP_Contribution": 0.0848,
+                "FeatureValue": 0.24
+            },
+            {
+                "Feature": "Amt Goods Price",
+                "RawFeatureName": "AMT_GOODS_PRICE",
+                "SHAP_Contribution": 0.0666,
+                "FeatureValue": 405000.0
+            },
+            {
+                "Feature": "Credit To Goods Ratio",
+                "RawFeatureName": "CREDIT_TO_GOODS_RATIO",
+                "SHAP_Contribution": 0.064,
+                "FeatureValue": 1.1584
+            }
+        ]
+    },
+    {
+        "Client_ID": 182248,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -3.2921,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0591,
+                "FeatureValue": 4.0
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0577,
+                "FeatureValue": 4.0
+            },
+            {
+                "Feature": "Region Rating Client W City",
+                "RawFeatureName": "REGION_RATING_CLIENT_W_CITY",
+                "SHAP_Contribution": 0.026,
+                "FeatureValue": 2.0
+            },
+            {
+                "Feature": "Client Age",
+                "RawFeatureName": "DAYS_BIRTH",
+                "SHAP_Contribution": 0.0237,
+                "FeatureValue": -19793.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 333675,
+        "Actual_Default": 1,
+        "Risk_Score_LogOdds": 1.0196,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.5326,
+                "FeatureValue": 0.3258
+            },
+            {
+                "Feature": "Ext Source Product",
+                "RawFeatureName": "EXT_SOURCE_PRODUCT",
+                "SHAP_Contribution": 0.1703,
+                "FeatureValue": 0.0151
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1602,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Ext Source Weighted",
+                "RawFeatureName": "EXT_SOURCE_WEIGHTED",
+                "SHAP_Contribution": 0.1415,
+                "FeatureValue": 0.2738
+            }
+        ]
+    },
+    {
+        "Client_ID": 102143,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.88,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.2885,
+                "FeatureValue": 0.4432
+            },
+            {
+                "Feature": "Inst Rec180 Count",
+                "RawFeatureName": "INST_REC180_COUNT",
+                "SHAP_Contribution": 0.1268,
+                "FeatureValue": 24.0
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.0932,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Inst Avg Days Early",
+                "RawFeatureName": "INST_AVG_DAYS_EARLY",
+                "SHAP_Contribution": 0.0839,
+                "FeatureValue": 3.4267
+            }
+        ]
+    },
+    {
+        "Client_ID": 291986,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.5165,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.1175,
+                "FeatureValue": 38817.0
+            },
+            {
+                "Feature": "Landarea Mode",
+                "RawFeatureName": "LANDAREA_MODE",
+                "SHAP_Contribution": 0.0613,
+                "FeatureValue": NaN
+            },
+            {
+                "Feature": "Ext Source X Employed",
+                "RawFeatureName": "EXT_SOURCE_X_EMPLOYED",
+                "SHAP_Contribution": 0.0547,
+                "FeatureValue": 0.0
+            },
+            {
+                "Feature": "Region Population Relative",
+                "RawFeatureName": "REGION_POPULATION_RELATIVE",
+                "SHAP_Contribution": 0.0537,
+                "FeatureValue": 0.0358
+            }
+        ]
+    },
+    {
+        "Client_ID": 138839,
+        "Actual_Default": 1,
+        "Risk_Score_LogOdds": -0.4616,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Credit Term Months",
+                "RawFeatureName": "CREDIT_TERM_MONTHS",
+                "SHAP_Contribution": 0.3605,
+                "FeatureValue": 12.5805
+            },
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.2219,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0944,
+                "FeatureValue": 3.0
+            },
+            {
+                "Feature": "Inst Avg Days Early",
+                "RawFeatureName": "INST_AVG_DAYS_EARLY",
+                "SHAP_Contribution": 0.0643,
+                "FeatureValue": 0.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 148136,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.6986,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.114,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.074,
+                "FeatureValue": 4.0
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0644,
+                "FeatureValue": 64395.0
+            },
+            {
+                "Feature": "Organization Type",
+                "RawFeatureName": "ORGANIZATION_TYPE",
+                "SHAP_Contribution": 0.0481,
+                "FeatureValue": 5.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 378496,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -2.1903,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Name Family Status",
+                "RawFeatureName": "NAME_FAMILY_STATUS",
+                "SHAP_Contribution": 0.0824,
+                "FeatureValue": 2.0
+            },
+            {
+                "Feature": "Inst Avg Days Early",
+                "RawFeatureName": "INST_AVG_DAYS_EARLY",
+                "SHAP_Contribution": 0.068,
+                "FeatureValue": 2.0849
+            },
+            {
+                "Feature": "Average Days Past Due (Historical)",
+                "RawFeatureName": "INST_AVG_DPD",
+                "SHAP_Contribution": 0.0481,
+                "FeatureValue": 0.3868
+            },
+            {
+                "Feature": "Ext Source X Dti",
+                "RawFeatureName": "EXT_SOURCE_X_DTI",
+                "SHAP_Contribution": 0.0427,
+                "FeatureValue": 3.9901
+            }
+        ]
+    },
+    {
+        "Client_ID": 139605,
+        "Actual_Default": 1,
+        "Risk_Score_LogOdds": -0.6313,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Name Family Status",
+                "RawFeatureName": "NAME_FAMILY_STATUS",
+                "SHAP_Contribution": 0.0515,
+                "FeatureValue": 4.0
+            },
+            {
+                "Feature": "Ext Source X Employed",
+                "RawFeatureName": "EXT_SOURCE_X_EMPLOYED",
+                "SHAP_Contribution": 0.0513,
+                "FeatureValue": 0.0
+            },
+            {
+                "Feature": "Inst Avg Days Early",
+                "RawFeatureName": "INST_AVG_DAYS_EARLY",
+                "SHAP_Contribution": 0.0488,
+                "FeatureValue": 0.0
+            },
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.0448,
+                "FeatureValue": 0.0
+            }
+        ]
+    },
+    {
+        "Client_ID": 233353,
+        "Actual_Default": 1,
+        "Risk_Score_LogOdds": 0.4365,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Average External Credit Score",
+                "RawFeatureName": "EXT_SOURCE_MEAN",
+                "SHAP_Contribution": 0.673,
+                "FeatureValue": 0.2289
+            },
+            {
+                "Feature": "Ext Source Product",
+                "RawFeatureName": "EXT_SOURCE_PRODUCT",
+                "SHAP_Contribution": 0.2996,
+                "FeatureValue": 0.0023
+            },
+            {
+                "Feature": "Ext Source Weighted",
+                "RawFeatureName": "EXT_SOURCE_WEIGHTED",
+                "SHAP_Contribution": 0.2836,
+                "FeatureValue": 0.1675
+            },
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.1621,
+                "FeatureValue": 0.151
+            }
+        ]
+    },
+    {
+        "Client_ID": 110397,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -2.3652,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.1047,
+                "FeatureValue": 6.0
+            },
+            {
+                "Feature": "Payment Burden Index",
+                "RawFeatureName": "PAYMENT_BURDEN_INDEX",
+                "SHAP_Contribution": 0.0448,
+                "FeatureValue": 0.3233
+            },
+            {
+                "Feature": "Ext Source X Employed",
+                "RawFeatureName": "EXT_SOURCE_X_EMPLOYED",
+                "SHAP_Contribution": 0.0442,
+                "FeatureValue": 0.0
+            },
+            {
+                "Feature": "Landarea Mode",
+                "RawFeatureName": "LANDAREA_MODE",
+                "SHAP_Contribution": 0.0424,
+                "FeatureValue": NaN
+            }
+        ]
+    },
+    {
+        "Client_ID": 426103,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.4523,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1392,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "External Credit Score (Bureau 3)",
+                "RawFeatureName": "EXT_SOURCE_3",
+                "SHAP_Contribution": 0.1349,
+                "FeatureValue": 0.1863
+            },
+            {
+                "Feature": "Loan Annuity Amount",
+                "RawFeatureName": "AMT_ANNUITY",
+                "SHAP_Contribution": 0.0921,
+                "FeatureValue": 42660.0
+            },
+            {
+                "Feature": "Payment Burden Index",
+                "RawFeatureName": "PAYMENT_BURDEN_INDEX",
+                "SHAP_Contribution": 0.075,
+                "FeatureValue": 0.4242
+            }
+        ]
+    },
+    {
+        "Client_ID": 122624,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -0.7769,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Inst Total Installments",
+                "RawFeatureName": "INST_TOTAL_INSTALLMENTS",
+                "SHAP_Contribution": 0.08,
+                "FeatureValue": 12.0
+            },
+            {
+                "Feature": "Ext Source 3 Is Missing",
+                "RawFeatureName": "EXT_SOURCE_3_IS_MISSING",
+                "SHAP_Contribution": 0.0717,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0682,
+                "FeatureValue": 4.0
+            },
+            {
+                "Feature": "Livingapartments Medi",
+                "RawFeatureName": "LIVINGAPARTMENTS_MEDI",
+                "SHAP_Contribution": 0.0644,
+                "FeatureValue": NaN
+            }
+        ]
+    },
+    {
+        "Client_ID": 296180,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -2.0392,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Def 30 Cnt Social Circle",
+                "RawFeatureName": "DEF_30_CNT_SOCIAL_CIRCLE",
+                "SHAP_Contribution": 0.0704,
+                "FeatureValue": 2.0
+            },
+            {
+                "Feature": "Nonlivingapartments Mode",
+                "RawFeatureName": "NONLIVINGAPARTMENTS_MODE",
+                "SHAP_Contribution": 0.0535,
+                "FeatureValue": NaN
+            },
+            {
+                "Feature": "Landarea Mode",
+                "RawFeatureName": "LANDAREA_MODE",
+                "SHAP_Contribution": 0.0525,
+                "FeatureValue": NaN
+            },
+            {
+                "Feature": "Livingapartments Mode",
+                "RawFeatureName": "LIVINGAPARTMENTS_MODE",
+                "SHAP_Contribution": 0.0478,
+                "FeatureValue": NaN
+            }
+        ]
+    },
+    {
+        "Client_ID": 312439,
+        "Actual_Default": 0,
+        "Risk_Score_LogOdds": -1.5878,
+        "Adverse_Action_Reasons": [
+            {
+                "Feature": "Code Gender",
+                "RawFeatureName": "CODE_GENDER",
+                "SHAP_Contribution": 0.1464,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Name Education Type",
+                "RawFeatureName": "NAME_EDUCATION_TYPE",
+                "SHAP_Contribution": 0.0846,
+                "FeatureValue": 4.0
+            },
+            {
+                "Feature": "Ext Source 1 Is Missing",
+                "RawFeatureName": "EXT_SOURCE_1_IS_MISSING",
+                "SHAP_Contribution": 0.0729,
+                "FeatureValue": 1.0
+            },
+            {
+                "Feature": "Amt Goods Price",
+                "RawFeatureName": "AMT_GOODS_PRICE",
+                "SHAP_Contribution": 0.0601,
+                "FeatureValue": 135000.0
+            }
+        ]
+    }
+]

@@ -1,0 +1,23 @@
+{
+    "model_type": "CoxProportionalHazards",
+    "penalizer": 0.01,
+    "concordance_index_train": 0.7292237995597542,
+    "concordance_index_test": 0.7293959818153855,
+    "covariates": [
+        "EXT_SOURCE_MEAN",
+        "EXT_SOURCE_MIN",
+        "PAYMENT_BURDEN_INDEX",
+        "DEBT_TO_INCOME_RATIO",
+        "ANNUITY_TO_INCOME_RATIO",
+        "AGE_YEARS",
+        "YEARS_EMPLOYED",
+        "INST_AVG_DPD",
+        "INST_PCT_LATE",
+        "INST_AVG_DEFICIT",
+        "INST_TOTAL_INSTALLMENTS",
+        "REGION_RATING_CLIENT_W_CITY",
+        "AMT_CREDIT",
+        "AMT_ANNUITY"
+    ],
+    "timestamp": "2026-08-27 20:52:31"
+}

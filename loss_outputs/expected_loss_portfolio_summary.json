@@ -1,0 +1,46 @@
+{
+    "total_loans": 307511,
+    "total_original_credit_limit": 184207081472.0,
+    "total_portfolio_ead": 40519229440.0,
+    "total_portfolio_expected_loss": 6267606016.0,
+    "portfolio_el_rate_pct": 15.468226080856093,
+    "mean_pd": 0.39195436239242554,
+    "mean_lgd": 0.3838886022567749,
+    "mean_ead": 131765.140625,
+    "mean_el_per_loan": 20381.728515625,
+    "tier_breakdown": [
+        {
+            "RISK_TIER": "Near-Prime",
+            "Loan_Count": 142160,
+            "Total_EAD": 17720410112.0,
+            "Total_EL": 2300256768.0,
+            "Mean_PD": 0.3381294906139374,
+            "Mean_LGD": 0.38386791944503784,
+            "Mean_EL": 16180.759765625,
+            "EL_Share_Pct": 36.700721740722656,
+            "EL_Rate_Pct": 12.98083209991455
+        },
+        {
+            "RISK_TIER": "Prime",
+            "Loan_Count": 69273,
+            "Total_EAD": 9276952576.0,
+            "Total_EL": 445689824.0,
+            "Mean_PD": 0.13037927448749542,
+            "Mean_LGD": 0.375863641500473,
+            "Mean_EL": 6433.8173828125,
+            "EL_Share_Pct": 7.1110053062438965,
+            "EL_Rate_Pct": 4.804269790649414
+        },
+        {
+            "RISK_TIER": "Subprime",
+            "Loan_Count": 96078,
+            "Total_EAD": 13521864704.0,
+            "Total_EL": 3521659136.0,
+            "Mean_PD": 0.6601930260658264,
+            "Mean_LGD": 0.3897053301334381,
+            "Mean_EL": 36654.16796875,
+            "EL_Share_Pct": 56.18826675415039,
+            "EL_Rate_Pct": 26.0441837310791
+        }
+    ]
+}

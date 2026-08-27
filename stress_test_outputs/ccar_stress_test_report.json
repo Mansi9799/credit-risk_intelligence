@@ -1,0 +1,23 @@
+{
+    "Baseline": {
+        "Total_EAD_Billions": 40.51919937133789,
+        "Total_Expected_Loss_Billions": 6.267600059509277,
+        "Portfolio_Expected_Loss_Rate": 0.15469999611377716,
+        "PD_Multiplier": 1.0,
+        "LGD_Multiplier": 1.0
+    },
+    "Adverse": {
+        "Total_EAD_Billions": 40.51919937133789,
+        "Total_Expected_Loss_Billions": 9.838800430297852,
+        "Portfolio_Expected_Loss_Rate": 0.24279999732971191,
+        "PD_Multiplier": 1.4,
+        "LGD_Multiplier": 1.15
+    },
+    "Severely Adverse": {
+        "Total_EAD_Billions": 40.51919937133789,
+        "Total_Expected_Loss_Billions": 15.17609977722168,
+        "Portfolio_Expected_Loss_Rate": 0.37450000643730164,
+        "PD_Multiplier": 2.2,
+        "LGD_Multiplier": 1.35
+    }
+}

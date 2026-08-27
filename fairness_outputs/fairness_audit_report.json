@@ -1,0 +1,42 @@
+{
+    "Gender_Audit": {
+        "M": {
+            "Approval_Rate": 0.5795870206489675,
+            "True_Positive_Rate (Default correctly caught)": 0.8008153756552125,
+            "False_Positive_Rate (Safe person wrongly declined)": 0.37753561347075426,
+            "Population_Count": 16950
+        },
+        "F": {
+            "Approval_Rate": 0.7382450832072617,
+            "True_Positive_Rate (Default correctly caught)": 0.6712922810060711,
+            "False_Positive_Rate (Safe person wrongly declined)": 0.23103695029924537,
+            "Population_Count": 33050
+        }
+    },
+    "Age_Cohort_Audit": {
+        "31-45": {
+            "Approval_Rate": 0.6457338902147971,
+            "True_Positive_Rate (Default correctly caught)": 0.7664312873438349,
+            "False_Positive_Rate (Safe person wrongly declined)": 0.31273602977395876,
+            "Population_Count": 20112
+        },
+        "46-60": {
+            "Approval_Rate": 0.7601994832662381,
+            "True_Positive_Rate (Default correctly caught)": 0.6371428571428571,
+            "False_Positive_Rate (Safe person wrongly declined)": 0.21304431475662156,
+            "Population_Count": 16643
+        },
+        "18-30": {
+            "Approval_Rate": 0.47990288643107637,
+            "True_Positive_Rate (Default correctly caught)": 0.8485576923076923,
+            "False_Positive_Rate (Safe person wrongly declined)": 0.4785779398359161,
+            "Population_Count": 7414
+        },
+        "60+": {
+            "Approval_Rate": 0.8619447779111644,
+            "True_Positive_Rate (Default correctly caught)": 0.45666666666666667,
+            "False_Positive_Rate (Safe person wrongly declined)": 0.12077382028566262,
+            "Population_Count": 5831
+        }
+    }
+}

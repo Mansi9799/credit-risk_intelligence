@@ -1,0 +1,27 @@
+# Core Data Science & Numeric Processing
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Machine Learning & Modeling
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+lightgbm>=4.0.0
+
+# Survival Analysis (Time-to-Default)
+lifelines>=0.28.0
+
+# Explainability & Counterfactuals
+shap>=0.44.0
+dice-ml>=0.11
+
+# Causal Inference & Uplift Modeling
+econml>=0.15.0; python_version < "3.13"
+
+# Visualization & Reporting
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Dashboard & Interactive Prototyping
+streamlit>=1.30.0
+jupyter>=1.0.0

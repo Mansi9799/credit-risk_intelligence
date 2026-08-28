@@ -6,10 +6,10 @@ import json
 from sklearn.metrics import confusion_matrix
 
 # Configuration
-DATA_PATH = r"C:\Users\MY PC\OneDrive\ドキュメント\Rainmeter\Desktop\credit-risk-intelligence\processed_data\application_features.parquet"
-MODEL_PATH = r"C:\Users\MY PC\OneDrive\ドキュメント\Rainmeter\Desktop\credit-risk-intelligence\models\xgboost_model.joblib"
-ENCODER_PATH = r"C:\Users\MY PC\OneDrive\ドキュメント\Rainmeter\Desktop\credit-risk-intelligence\models\tree_label_encoders.joblib"
-OUTPUT_DIR = r"C:\Users\MY PC\OneDrive\ドキュメント\Rainmeter\Desktop\credit-risk-intelligence\fairness_outputs"
+DATA_PATH = "processed_data\application_features.parquet"
+MODEL_PATH = "models\xgboost_model.joblib"
+ENCODER_PATH = "models\tree_label_encoders.joblib"
+OUTPUT_DIR = "fairness_outputs"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 class CreditRiskModelWrapper:

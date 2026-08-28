@@ -9,8 +9,8 @@ import lightgbm as lgb
 from econml.metalearners import TLearner
 
 # Configuration
-DATA_PATH = r"C:\Users\MY PC\OneDrive\ドキュメント\Rainmeter\Desktop\credit-risk-intelligence\processed_data\application_features.parquet"
-OUTPUT_DIR = r"C:\Users\MY PC\OneDrive\ドキュメント\Rainmeter\Desktop\credit-risk-intelligence\uplift_outputs"
+DATA_PATH = "processed_data\application_features.parquet"
+OUTPUT_DIR = "uplift_outputs"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def simulate_intervention_data(df, sample_size=50000):

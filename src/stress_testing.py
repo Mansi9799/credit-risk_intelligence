@@ -5,8 +5,8 @@ import json
 import matplotlib.pyplot as plt
 
 # Configuration
-DATA_PATH = r"C:\Users\MY PC\OneDrive\ドキュメント\Rainmeter\Desktop\credit-risk-intelligence\processed_data\expected_loss_dataset.parquet"
-OUTPUT_DIR = r"C:\Users\MY PC\OneDrive\ドキュメント\Rainmeter\Desktop\credit-risk-intelligence\stress_test_outputs"
+DATA_PATH = "processed_data\expected_loss_dataset.parquet"
+OUTPUT_DIR = "stress_test_outputs"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Define CCAR / Basel Macroeconomic Stress Scenarios

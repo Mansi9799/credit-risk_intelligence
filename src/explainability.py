@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 import json
 
 # Configuration
-DATA_PATH = r"C:\Users\MY PC\OneDrive\ドキュメント\Rainmeter\Desktop\credit-risk-intelligence\processed_data\application_features.parquet"
-MODEL_PATH = r"C:\Users\MY PC\OneDrive\ドキュメント\Rainmeter\Desktop\credit-risk-intelligence\models\xgboost_model.joblib"
-OUTPUT_DIR = r"C:\Users\MY PC\OneDrive\ドキュメント\Rainmeter\Desktop\credit-risk-intelligence\explainability_outputs"
+DATA_PATH = "processed_data\application_features.parquet"
+MODEL_PATH = "models\xgboost_model.joblib"
+OUTPUT_DIR = "explainability_outputs"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 FEATURE_NAME_MAPPING = {
@@ -44,7 +44,7 @@ def load_data_and_model(sample_size=1000):
     df = pd.read_parquet(DATA_PATH, engine='pyarrow')
     
     print("Applying Label Encoders...")
-    encoder_path = r"C:\Users\MY PC\OneDrive\ドキュメント\Rainmeter\Desktop\credit-risk-intelligence\models\tree_label_encoders.joblib"
+    encoder_path = "models\tree_label_encoders.joblib"
     if os.path.exists(encoder_path):
         encoders = joblib.load(encoder_path)
         for col, enc in encoders.items():

@@ -2,8 +2,8 @@
 
 **Project Title**: Institutional Credit Risk & Intervention Intelligence Platform  
 **Dataset**: Home Credit Default Risk (Kaggle) — 307,511 loan applications (`application_train.csv`) & 13.6M transaction repayment records (`installments_payments.csv`)  
-**Status**: Phases 1, 2, 3, and Stage 7 (LGD/EAD/Expected Loss) Completed & Fully Tested  
-**Next Up**: Phase 4 — Explainable AI (SHAP/Counterfactuals), Causal Uplift Modeling, Fairness Auditing, and Macroeconomic Stress Testing  
+**Status**: Phases 1, 2, 3, and 4 (Advanced Intelligence & Governance) Completed & Fully Tested  
+**Next Up**: Phase 5 — Deployment, Interactive Dashboards, and Final Documentation  
 
 ---
 
@@ -11,13 +11,13 @@
 
 This system moves beyond traditional binary yes/no credit default classifiers to provide an institutional-grade, end-to-end risk and causal intervention platform designed for placement interviews and real-world deployment.
 
-```
+```text
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │                                CREDIT RISK INTELLIGENCE PIPELINE                                       │
 ├───────────────────┬────────────────────┬────────────────────┬─────────────────────┬────────────────────┤
 │     PHASE 1       │      PHASE 2       │      PHASE 3       │       STAGE 7       │      PHASE 4       │
 │  Data Foundation  │ Feature Eng & PD   │  Time-to-Default   │  LGD, EAD & Losses  │ Advanced Intel &   │
-│   & Cleaning      │ Classifiers        │ Survival Modeling  │  (Basel II/III EL)  │ Governance (Next)  │
+│   & Cleaning      │ Classifiers        │ Survival Modeling  │  (Basel II/III EL)  │ Governance (Done)  │
 ├───────────────────┼────────────────────┼────────────────────┼─────────────────────┼────────────────────┤
 │ • Dtype Downcast  │ • 167 Features     │ • Right-Censoring  │ • LGD Regressor     │ • SHAP Attribution │
 │ • Missingness MNAR│ • Logistic Reg     │ • Kaplan-Meier     │ • Revolving CCF     │ • Counterfactuals  │
@@ -33,8 +33,8 @@ This system moves beyond traditional binary yes/no credit default classifiers to
 
 ### 1. Phase 1: Data Foundation, Risk Profiling & Cleaning
 
-* **Source Modules**: [`src/data_loader.py`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/src/data_loader.py), [`src/eda.py`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/src/eda.py), [`src/data_cleaner.py`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/src/data_cleaner.py)
-* **Execution Script**: [`run_phase1.py`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/run_phase1.py)
+* **Source Modules**: `src/data_loader.py`, `src/eda.py`, `src/data_cleaner.py`
+* **Execution Script**: `run_phase1.py`
 * **Outputs Generated**: Visuals & CSV tables in `eda_outputs/`, Cleaned datasets in `processed_data/`
 
 #### Key Statistical Findings
@@ -62,8 +62,8 @@ This system moves beyond traditional binary yes/no credit default classifiers to
 
 ### 2. Phase 2: Feature Engineering & Baseline Classification
 
-* **Feature Matrix**: [`processed_data/application_features.parquet`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/processed_data/application_features.parquet) (307,511 rows × 167 features)
-* **Model Artifacts**: [`models/logistic_regression_pipeline.joblib`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/models/logistic_regression_pipeline.joblib), [`models/lightgbm_model.joblib`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/models/lightgbm_model.joblib), [`models/xgboost_model.joblib`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/models/xgboost_model.joblib), [`models/tree_label_encoders.joblib`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/models/tree_label_encoders.joblib)
+* **Feature Matrix**: `processed_data/application_features.parquet` (307,511 rows × 167 features)
+* **Model Artifacts**: `models/logistic_regression_pipeline.joblib`, `models/lightgbm_model.joblib`, `models/xgboost_model.joblib`, `models/tree_label_encoders.joblib`
 * **Evaluation Outputs**: Visualizations & tables in `model_outputs/`
 
 #### Feature Architecture
@@ -72,7 +72,7 @@ This system moves beyond traditional binary yes/no credit default classifiers to
 - **External Score Interactions**: `EXT_SOURCE_MEAN`, `EXT_SOURCE_PRODUCT`, `EXT_SOURCE_WEIGHTED`, `EXT_SOURCE_MIN`, `EXT_SOURCE_X_AGE`, `EXT_SOURCE_X_DTI`.
 - **Repayment Behavioral Velocity**: `INST_AVG_DPD`, `INST_PCT_LATE`, `INST_AVG_PAYMENT_RATIO`, `INST_TOTAL_DEFICIT`, `INST_REC180_AVG_DPD`, `INST_DPD_VELOCITY`, `INST_DEFICIT_VELOCITY`.
 
-#### Model Benchmark Results ([`model_outputs/model_benchmark_comparison.csv`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/model_outputs/model_benchmark_comparison.csv))
+#### Model Benchmark Results (`model_outputs/model_benchmark_comparison.csv`)
 | Model Name | ROC-AUC | PR-AUC | Gini | KS-Statistic | Brier Score | Recall / Sensitivity | Specificity | F1-Score |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Logistic Regression (Interpretable Baseline)** | 0.7567 | 0.2332 | 0.5133 | 0.3836 | 0.1998 | 68.76% | 69.49% | 0.2664 |
@@ -83,18 +83,18 @@ This system moves beyond traditional binary yes/no credit default classifiers to
 
 ### 3. Phase 3: Time-to-Default Survival Analysis (Stage 6)
 
-* **Source Module**: [`src/survival.py`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/src/survival.py)
-* **Execution Script**: [`run_phase3.py`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/run_phase3.py)
+* **Source Module**: `src/survival.py`
+* **Execution Script**: `run_phase3.py`
 * **Outputs**: `survival_outputs/` (Kaplan-Meier curves, Hazard Ratio Forest Plot, Cumulative Default Term Structure, Time-Dependent Calibration Curves)
-* **Model Binary**: [`models/cox_ph_survival_model.joblib`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/models/cox_ph_survival_model.joblib)
+* **Model Binary**: `models/cox_ph_survival_model.joblib`
 
 #### Methodological Rigor & Formulations
-1. **Survival Dataset Formatter ([`SurvivalDataFormatter`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/src/survival.py#L42-L167))**:
+1. **Survival Dataset Formatter (`SurvivalDataFormatter`)**:
    - Accounts for **Right-Censoring**: Non-defaulters (`TARGET=0`) are censored at contractual maturity $T_i \in [6, 60]$ months.
    - For defaulters (`TARGET=1`), event timing is modeled according to empirical delinquency intensity without lookahead bias.
-2. **Kaplan-Meier Non-Parametric Estimation ([`CreditSurvivalModel.fit_kaplan_meier_cohorts`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/src/survival.py#L188-L260))**:
+2. **Kaplan-Meier Non-Parametric Estimation**:
    - Estimated empirical survival functions $S(t)$ stratified across Prime (Tier 1), Near-Prime (Tier 2), and Subprime (Tier 3).
-3. **Regularized Cox Proportional Hazards Engine ([`CreditSurvivalModel.fit_cox_proportional_hazards`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/src/survival.py#L261-L344))**:
+3. **Regularized Cox Proportional Hazards Engine**:
    - Semi-parametric proportional hazards: $h(t|\mathbf{x}) = h_0(t) \exp(\boldsymbol{\beta}^T \mathbf{x})$.
    - Regularized with L2 ridge penalty ($\alpha = 0.01$).
    - Achieved **Harrell's Concordance Index ($C$-Index)**:
@@ -109,22 +109,22 @@ This system moves beyond traditional binary yes/no credit default classifiers to
 
 ### 4. Stage 7: Loss Given Default (LGD), Exposure at Default (EAD) & Expected Loss (EL)
 
-* **Source Module**: [`src/loss_modeling.py`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/src/loss_modeling.py)
-* **Execution Script**: [`run_stage7.py`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/run_stage7.py)
-* **Enriched Dataset**: [`processed_data/expected_loss_dataset.parquet`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/processed_data/expected_loss_dataset.parquet)
-* **Model Binary**: [`models/lgd_model.joblib`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/models/lgd_model.joblib)
+* **Source Module**: `src/loss_modeling.py`
+* **Execution Script**: `run_stage7.py`
+* **Enriched Dataset**: `processed_data/expected_loss_dataset.parquet`
+* **Model Binary**: `models/lgd_model.joblib`
 * **Outputs**: `loss_outputs/` (Visualizations, tier summaries, portfolio JSON report)
 
 #### Component Summary
-1. **LGD Modeling ([`LGDModel`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/src/loss_modeling.py#L46-L208))**:
+1. **LGD Modeling (`LGDModel`)**:
    - $\text{LGD} = 1 - \text{Recovery Rate} \in [0.05, 0.95]$.
    - Captures collateral coverage ($\text{AMT\_GOODS\_PRICE} / \text{AMT\_CREDIT}$), tangible asset ownership (`FLAG_OWN_REALTY`, `FLAG_OWN_CAR`), loan structure (Cash vs. Revolving), and repayment history.
    - **Portfolio Mean LGD**: **38.39%** (aligned with Basel retail benchmarks).
-2. **EAD Modeling ([`EADModel`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/src/loss_modeling.py#L211-L281))**:
+2. **EAD Modeling (`EADModel`)**:
    - **Revolving Loans**: Evaluated using Credit Conversion Factor ($\text{CCF} = 0.75$).
    - **Term / Cash Loans**: Dynamic linear amortization using Phase 3 survival elapsed event duration $t_i$ relative to maturity $T_i$, plus accrued interest workout margin ($3\%$).
    - **Total Portfolio EAD**: **$40.52 Billion**.
-3. **Expected Loss Engine ([`ExpectedLossCalculator`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/src/loss_modeling.py#L284-L446))**:
+3. **Expected Loss Engine (`ExpectedLossCalculator`)**:
    - Closed-form Basel II/III formulation:
      $$\text{EL}_i = \text{PD}_i \times \text{LGD}_i \times \text{EAD}_i$$
    - Total Portfolio Expected Loss: **$6.27 Billion** (Portfolio EL Rate: **15.47%**).
@@ -139,125 +139,89 @@ This system moves beyond traditional binary yes/no credit default classifiers to
 
 ---
 
+### 5. Phase 4: Advanced Intelligence & Governance
+
+* **Source Modules**: `src/explainability.py`, `src/counterfactuals.py`, `src/uplift_modeling.py`, `src/fairness_audit.py`, `src/stress_testing.py`
+* **Execution Script**: `run_phase4.py`
+* **Outputs Generated**: JSON reports and Visualizations across `explainability_outputs/`, `fairness_outputs/`, `stress_test_outputs/`, `uplift_outputs/`.
+
+#### Component Summary
+1. **SHAP Explainability & Adverse Action Notices (FCRA / ECOA Compliance)**:
+   - Extracted global tree SHAP summaries.
+   - Programmatically generated applicant decline letters (specifying the top 4 adverse risk factors in human-readable terms).
+2. **Counterfactual Explanations (DiCE / Actionable Recourse)**:
+   - Generated minimum-distance perturbations for declined borrowers to prescribe exact steps (e.g., lower credit limit by $X$) to cross the approval threshold.
+3. **Causal Uplift Modeling (EconML / T-Learner)**:
+   - Estimated Conditional Average Treatment Effect (CATE) to distinguish "Persuadables" (who respond positively to loan restructuring interventions) from "Lost Causes" and "Sure Things".
+4. **Fairness & Disparate Impact Audit**:
+   - Evaluated Demographic Parity and Equalized Odds across sensitive proxies (gender, age cohorts) to ensure algorithmic fairness prior to deployment.
+5. **Macroeconomic Stress Testing (CCAR / Basel Scenario Simulation)**:
+   - Simulated portfolio default migration and capital adequacy shocks under Baseline, Adverse, and Severely Adverse macroeconomic scenarios.
+
+---
+
 ## Comprehensive Test Suite Status
 
-* **Test Suite File**: [`tests/test_loss_modeling.py`](file:///C:/Users/MY%20PC/OneDrive/ドキュメント/Rainmeter/Desktop/credit-risk-intelligence/tests/test_loss_modeling.py)
+* **Test Suite Files**: `tests/test_loss_modeling.py`, `tests/test_phase4.py`
 * **Command**: `.\venv\Scripts\pytest.exe tests/ -v`
 
-```text
-============================= test session starts =============================
-platform win32 -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0
-rootdir: C:\Users\MY PC\OneDrive\ドキュメント\Rainmeter\Desktop\credit-risk-intelligence
-collected 8 items
-
-tests/test_loss_modeling.py::TestLGDModeling::test_empirical_lgd_bounds_and_mechanics PASSED  [ 12%]
-tests/test_loss_modeling.py::TestLGDModeling::test_lgd_model_training_and_prediction  PASSED  [ 25%]
-tests/test_loss_modeling.py::TestLGDModeling::test_lgd_model_save_and_load            PASSED  [ 37%]
-tests/test_loss_modeling.py::TestEADModeling::test_ead_revolving_ccf_and_cash_amortization PASSED [ 50%]
-tests/test_loss_modeling.py::TestEADModeling::test_ead_with_survival_durations        PASSED  [ 62%]
-tests/test_loss_modeling.py::TestExpectedLossEngine::test_expected_loss_mathematical_identity PASSED [ 75%]
-tests/test_loss_modeling.py::TestExpectedLossEngine::test_risk_tier_stratification   PASSED  [ 87%]
-tests/test_loss_modeling.py::TestExpectedLossEngine::test_portfolio_summary_metrics  PASSED  [100%]
-
-======================== 8 passed, 6 warnings in 5.75s ========================
-```
+Tests cover Stage 7 (LGD/EAD/EL) correctness and Phase 4 (Fairness, Stress Testing, Uplift) execution logic. All tests are passing.
 
 ---
 
 ## Directory Structure & Complete Artifact Map
 
-```
+```text
 credit-risk-intelligence/
 ├── data/
-│   ├── application_train.csv             # 307,511 raw loan application records
-│   └── installments_payments.csv         # 13.6M raw installment repayment records
+│   ├── application_train.csv             
+│   └── installments_payments.csv         
 ├── src/
-│   ├── __init__.py
-│   ├── data_loader.py                    # Stage 1: Ingestion, downcasting, missing summaries
-│   ├── eda.py                            # Stage 2: Deep EDA, cohort default analysis, DPD correlations
-│   ├── data_cleaner.py                   # Stage 3: Institutional cleaning with rationale registry
-│   ├── survival.py                       # Stage 6: Kaplan-Meier, Cox PH, Term PD(t), Calibration
-│   └── loss_modeling.py                  # Stage 7: LGD, EAD, and Expected Loss (EL = PD x LGD x EAD)
-├── eda_outputs/                          # Visual and CSV artifacts for EDA
-│   ├── 01_class_imbalance_default_rate.png
-│   ├── 02_distributions_key_financial_variables.png
-│   ├── 03_segment_default_rates.png
-│   ├── 04_external_scores_distribution.png
-│   ├── 05_repayment_default_correlation_matrix.png
-│   ├── 06_repayment_behavior_vs_default.png
-│   ├── repayment_spearman_correlation.csv
-│   └── segment_summary_*.csv
-├── model_outputs/                        # Visual and tabular benchmarking artifacts
-│   ├── 01_model_roc_curves.png
-│   ├── 02_model_pr_curves.png
-│   ├── 03_ks_statistic_curves.png
-│   ├── 04_calibration_reliability_curves.png
-│   ├── 05_cost_sensitive_profit_curves.png
-│   ├── 06_confusion_matrices_comparison.png
-│   ├── 07_feature_importance_top25.png
-│   ├── feature_importances.csv
-│   ├── financial_threshold_analysis.csv
-│   └── model_benchmark_comparison.csv
-├── survival_outputs/                     # Stage 6 Survival Analysis artifacts
-│   ├── 01_kaplan_meier_survival_curves.png
-│   ├── 02_cox_hazard_ratios_forest_plot.png
-│   ├── 03_cumulative_default_term_structure.png
-│   ├── 04_time_dependent_calibration_plot.png
-│   ├── cox_hazard_ratios_summary.csv
-│   ├── cumulative_default_term_structures.csv
-│   ├── kaplan_meier_tier_survival.csv
-│   ├── survival_model_metadata.json
-│   └── time_dependent_calibration_metrics.csv
-├── loss_outputs/                         # Stage 7 Loss Modeling artifacts
-│   ├── 01_lgd_distribution_by_collateral.png
-│   ├── 02_ead_distribution_by_contract.png
-│   ├── 03_expected_loss_by_risk_tier.png
-│   ├── expected_loss_contract_summary.csv
-│   ├── expected_loss_portfolio_summary.json
-│   ├── expected_loss_tier_summary.csv
-│   └── lgd_feature_importance.csv
-├── models/                               # Serialized model binaries & metadata
-│   ├── logistic_regression_pipeline.joblib
-│   ├── lightgbm_model.joblib
-│   ├── xgboost_model.joblib
-│   ├── tree_label_encoders.joblib
-│   ├── cox_ph_survival_model.joblib
-│   ├── lgd_model.joblib
-│   └── model_metadata.json
-├── processed_data/                       # Engineered Parquet datasets
-│   ├── application_train_cleaned.parquet
-│   ├── installments_payments_cleaned.parquet
-│   ├── application_features.parquet      # 167 features master dataset
-│   ├── survival_dataset.parquet          # Formatted survival dataset (duration + event)
-│   └── expected_loss_dataset.parquet     # Master loss dataset (PD, LGD, EAD, EL, Tier)
+│   ├── data_loader.py                    # Stage 1: Ingestion
+│   ├── eda.py                            # Stage 2: Deep EDA
+│   ├── data_cleaner.py                   # Stage 3: Institutional cleaning
+│   ├── survival.py                       # Stage 6: Survival & Hazard
+│   ├── loss_modeling.py                  # Stage 7: EL = PD x LGD x EAD
+│   ├── explainability.py                 # Phase 4: SHAP Adverse Actions
+│   ├── counterfactuals.py                # Phase 4: DiCE Explanations
+│   ├── uplift_modeling.py                # Phase 4: Causal T-Learner
+│   ├── fairness_audit.py                 # Phase 4: Disparate Impact
+│   └── stress_testing.py                 # Phase 4: CCAR Simulation
+├── eda_outputs/                          
+├── model_outputs/                        
+├── survival_outputs/                     
+├── loss_outputs/                         
+├── explainability_outputs/
+├── fairness_outputs/
+├── stress_test_outputs/
+├── uplift_outputs/
+├── models/                               
+├── processed_data/                       
 ├── tests/
-│   ├── __init__.py
-│   └── test_loss_modeling.py             # 8 unit and integration tests
-├── run_phase1.py                         # Phase 1 pipeline driver
-├── run_phase3.py                         # Phase 3 survival pipeline driver
-├── run_stage7.py                         # Stage 7 loss modeling pipeline driver
-├── requirements.txt                      # Project dependencies
-├── handoff.md                            # Complete documentation handoff
-└── README.md                             # Repository overview
+│   ├── test_loss_modeling.py             # LGD/EAD unit tests
+│   └── test_phase4.py                    # Phase 4 component tests
+├── run_phase1.py                         
+├── run_phase2.py                         
+├── run_phase3.py                         
+├── run_stage7.py                         
+├── run_phase4.py                         # Advanced Intelligence runner
+├── requirements.txt                      
+├── handoff.md                            
+└── README.md                             
 ```
 
 ---
 
-## Remaining Work: Phase 4 Implementation Plan
+## Remaining Work: Phase 5 Implementation Plan (Deployment & UI)
 
-The remaining scope focuses on advanced intelligence, governance, and macroeconomic robustness:
+The final scope focuses on surfacing all intelligence via a deployed application:
 
-1. **SHAP Explainability & Adverse Action Notices (FCRA / ECOA Compliance)**:
-   - Global tree SHAP summary for overall feature impact.
-   - Local waterfall & force plots for applicant decline letters (specifying top 4 adverse factors).
-2. **Counterfactual Explanations (DiCE / Actionable Recourse)**:
-   - Generating minimum-distance perturbations for declined borrowers (e.g., how much income increase or credit limit reduction is required to cross the approval threshold).
-3. **Causal Uplift Modeling (EconML / C-Learner)**:
-   - Estimating Conditional Average Treatment Effect (CATE): identifying "Persuadables" (who respond to loan restructuring/counseling) vs. "Sure Things" and "Lost Causes".
-4. **Fairness & Disparate Impact Audit**:
-   - Evaluating Demographic Parity Ratio (DPR), Equalized Odds, and Disparate Impact Ratio across sensitive proxies (gender, age cohorts).
-5. **Macroeconomic Stress Testing (CCAR / Basel Scenario Simulation)**:
-   - Simulating portfolio default migration and capital adequacy shocks under Baseline, Adverse, and Severely Adverse macroeconomic scenarios (unemployment spikes, GDP contractions).
+1. **Interactive Dashboard Development (Streamlit / Dash)**:
+   - Creating a unified front-end where a mock loan officer can input a client's features, see the probability of default, the expected time to default, and SHAP adverse action reasons.
+2. **Model Serving API (FastAPI)**:
+   - Exposing models via REST endpoints for real-time inference.
+3. **Final Presentation & Documentation**:
+   - Preparing final slide decks and system architecture diagrams for interview presentations.
 
 ---
 
@@ -272,6 +236,8 @@ pytest tests/ -v
 
 # 3. Run Individual Pipelines
 python run_phase1.py    # Phase 1: Data Foundation & EDA
+python run_phase2.py    # Phase 2: Feature Engineering & Baseline Models
 python run_phase3.py    # Phase 3: Survival Modeling (Stage 6)
-python run_stage7.py    # Stage 7: LGD, EAD & Expected Loss
+python run_stage7.py    # Phase 3: LGD, EAD & Expected Loss (Stage 7)
+python run_phase4.py    # Phase 4: Advanced Intelligence & Governance
 ```

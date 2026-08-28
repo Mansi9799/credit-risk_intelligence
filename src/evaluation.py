@@ -15,31 +15,35 @@ def evaluate_model(y_true, y_pred_proba, threshold=0.5):
     Comprehensive institutional credit risk model evaluation.
     Computes ROC-AUC, PR-AUC, Gini, KS-Statistic, Brier Score, and F1.
     """
-    y_pred = (np.array(y_pred_proba) >= threshold).astype(int)
+    # Convert inputs to numpy arrays
+    y_true_np = np.array(y_true)
+    y_pred_proba_np = np.array(y_pred_proba)
+    
+    y_pred = (y_pred_proba_np >= threshold).astype(int)
     
     # 1. ROC AUC & Gini
-    roc_auc = roc_auc_score(y_true, y_pred_proba)
+    roc_auc = roc_auc_score(y_true_np, y_pred_proba_np)
     gini = (2 * roc_auc) - 1
     
     # 2. PR AUC
-    precision, recall, _ = precision_recall_curve(y_true, y_pred_proba)
+    precision, recall, _ = precision_recall_curve(y_true_np, y_pred_proba_np)
     pr_auc = auc(recall, precision)
     
     # 3. Brier Score
-    brier = brier_score_loss(y_true, y_pred_proba)
+    brier = brier_score_loss(y_true_np, y_pred_proba_np)
     
     # 4. KS-Statistic
-    mask_default = (y_true == 1)
-    mask_non_default = (y_true == 0)
+    mask_default = (y_true_np == 1)
+    mask_non_default = (y_true_np == 0)
     
     if sum(mask_default) > 0 and sum(mask_non_default) > 0:
-        ks_stat, _ = ks_2samp(y_pred_proba[mask_default], y_pred_proba[mask_non_default])
+        ks_stat, _ = ks_2samp(y_pred_proba_np[mask_default], y_pred_proba_np[mask_non_default])
     else:
         ks_stat = 0.0
         
     # 5. F1 & Confusion Matrix
-    f1 = f1_score(y_true, y_pred)
-    cm = confusion_matrix(y_true, y_pred, labels=[0, 1])
+    f1 = f1_score(y_true_np, y_pred)
+    cm = confusion_matrix(y_true_np, y_pred, labels=[0, 1])
     
     if cm.shape == (2, 2):
         tn, fp, fn, tp = cm.ravel()

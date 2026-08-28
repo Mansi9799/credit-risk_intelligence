@@ -1,88 +1,86 @@
-# Credit Risk Intelligence System
+# Institutional Credit Risk & Intervention Intelligence System
 
-An institutional-grade Credit Risk Analytics and Intelligence platform built for portfolio modeling, default prediction, survival analysis, explainable AI, causal uplift targeting, fairness auditing, and stress testing.
+An end-to-end, institutional-grade credit risk analytics platform designed for portfolio modeling, default prediction, survival analysis, explainable AI, causal uplift targeting, fairness auditing, and stress testing. 
 
----
+## 🚀 Pipeline Overview (Phases 1–5)
 
-## 📂 Phase 1: Data Foundation (Completed)
+This system moves beyond traditional binary yes/no credit classifiers to provide a real-world, regulatory-compliant risk and causal intervention platform.
 
-Phase 1 establishes the foundational data architecture, exploratory risk profiling, and interview-defensible data cleaning pipeline.
-
-### Architecture & Directory Structure
-```
-credit-risk-intelligence/
-├── data/                                 # Raw application & installment datasets
-│   ├── application_train.csv             # 307,511 loan applications (122 features)
-│   └── installments_payments.csv         # 13.6M transaction repayment records
-├── src/                                  # Modular core library
-│   ├── __init__.py
-│   ├── data_loader.py                    # Stage 1: High-perf ingestion, memory downcasting, missing reports
-│   ├── eda.py                            # Stage 2: Deep EDA, cohort default analysis, repayment correlations
-│   └── data_cleaner.py                   # Stage 3: Data cleaning & anomaly remediation with interview rationales
-├── eda_outputs/                          # Stage 2 visual & tabular artifacts
-│   ├── 01_class_imbalance_default_rate.png
-│   ├── 02_distributions_key_financial_variables.png
-│   ├── 03_segment_default_rates.png
-│   ├── 04_external_scores_distribution.png
-│   ├── 05_repayment_default_correlation_matrix.png
-│   ├── 06_repayment_behavior_vs_default.png
-│   └── segment_summary_*.csv             # Segment default rate tables
-├── processed_data/                       # Stage 3 output datasets for Phase 2
-│   ├── application_train_cleaned.parquet # 307,511 rows x 131 columns
-│   ├── application_train_cleaned.csv     # Sample inspection CSV
-│   └── installments_payments_cleaned.parquet
-├── requirements.txt                      # Dependencies for all phases
-└── run_phase1.py                         # End-to-end execution driver
-```
+1. **Phase 1: Data Foundation & Cleaning**: Data ingestion, severe class imbalance profiling, and robust anomaly remediation (Missing Not At Random handling, explicit encoding).
+2. **Phase 2: Feature Engineering & Baseline Models**: Creation of 167 features (financial burden ratios, repayment velocity) and benchmark classification (Logistic, XGBoost, LightGBM Champion).
+3. **Phase 3: Survival Modeling (Time-to-Default)**: Kaplan-Meier estimations and Regularized Cox Proportional Hazards for dynamic PD curves.
+4. **Stage 7: LGD, EAD & Expected Loss**: Basel II/III Expected Loss formulation computing portfolio-wide risk.
+5. **Phase 4 & 5: Advanced Intelligence & UI**: SHAP (Explainability), Counterfactuals (Interventions), Uplift Modeling, Fairness Auditing, CCAR Stress Testing, and an interactive Streamlit application.
 
 ---
 
-## 🔬 Summary of Key Findings from Phase 1 EDA
+## 🧠 Beyond Standard Classification
 
-1. **Severe Class Imbalance**:
-   - Total records: **307,511**
-   - Non-Default (`TARGET=0`): **282,686 (91.93%)**
-   - Default (`TARGET=1`): **24,825 (8.07%)**
-   - Imbalance ratio: **1 : 11.39**
-   - *Implication for Phase 2*: Models require PR-AUC / ROC-AUC optimization, cost-sensitive matrices, and stratified cross-validation over standard accuracy.
+While standard binary classification (e.g., Logistic Regression or LightGBM predicting Default vs. Non-Default) provides a static snapshot of risk, institutional banking requires advanced methodologies to handle temporal dynamics and drive actionable decisions.
 
-2. **Demographic & Segment Default Stratification**:
-   - **Age Risk Gradient**: Monotonic decrease in default risk with age:
-     - 18–25: **12.29% default rate**
-     - 25–34: **10.66% default rate**
-     - 35–44: **8.41% default rate**
-     - 45–54: **7.05% default rate**
-     - 55–64: **5.42% default rate**
-     - 65+: **3.66% default rate**
-   - **Credit Limit Bands**: Tier 3 ($500k–$750k) loans exhibit peak default rate (**9.46%**), whereas Jumbo (> $1M) prime loans have the lowest (**5.87%**).
-   - **Education Level**: Lower secondary applicants default at **10.93%**, compared to Academic Degree holders at **1.83%**.
+### 1. Why Survival Analysis (Cox PH)?
+Standard classifiers ignore the **timing** of a default and suffer from **right-censoring** bias (e.g., a non-defaulter at month 12 might default at month 24, but a standard classifier treats them as a hard "0"). 
+* **Time-to-Default**: Survival analysis models the *instantaneous hazard rate* over the entire loan lifecycle.
+* **Term Structure**: Allows us to generate dynamic Probability of Default (PD) curves at 12M, 24M, 36M, etc.
+* **Regulatory Compliance**: Cox PH guarantees risk monotonicity (e.g., rising DTI strictly elevates instantaneous hazard), necessary for OCC SR 11-7 model validation.
 
-3. **Repayment Friction & Behavioral Signals**:
-   - Granular transaction aggregation from `installments_payments.csv` revealed that **Average Days Past Due (DPD)**, **Payment Deficits (underpayment)**, and **Percentage of Late Installments** correlate positively with future application default.
-   - Defaulters exhibit significantly wider dispersion in payment shortfall and lower payment-to-installment ratios.
+### 2. Why Causal Uplift Modeling?
+Predicting that someone will default is only half the problem; determining *what to do about it* is the true objective.
+* **The Problem with Standard Risk Models**: They treat all high-risk clients equally (rejection).
+* **Uplift Modeling (CATE/T-Learner)**: Estimates the Conditional Average Treatment Effect of an intervention (e.g., debt restructuring, term extension, interest rate reduction).
+* **Outcome**: Segments clients into **Persuadables** (those who can be saved by an intervention), **Lost Causes** (will default regardless), and **Sure Things** (will repay regardless). This maximizes ROI on loss-mitigation budgets.
 
 ---
 
-## 🛠️ Data Cleaning & Interview Defense Rationale Registry
+## 📊 Evaluation Metrics Dictionary
 
-| Anomaly / Feature | Issue in Raw Data | Treatment Applied | Interview-Ready Business & Theoretical Rationale |
-| :--- | :--- | :--- | :--- |
-| `DAYS_EMPLOYED == 365243` | 55,374 records have +365,243 days (~1,000 years). | Created `DAYS_EMPLOYED_ANOM = 1`, replaced raw value with NaN / 0, derived positive `YEARS_EMPLOYED`. | Legacy core banking sentinel value for pensioners/unemployed. Preserves the high predictive signal of retirement/unemployment while preventing severe gradient and linear weight distortion. |
-| `AMT_REQ_CREDIT_BUREAU_*` | ~13.5% missing query counts across HOUR, DAY, WEEK, MON, QRT, YEAR. | Imputed with `0.0`. | Bureau APIs return NULL when no inquiry hits exist within the observation window. The missingness reflects 0 inquiries, not missing random observations. |
-| `OBS/DEF_30/60_CNT_SOCIAL_CIRCLE` | ~0.33% missing. | Imputed with `0.0`. | Represents absence of recorded default events in the client's social network circle. |
-| `OCCUPATION_TYPE` / Categoricals | 31.3% missing in occupation type. | Imputed with explicit category `'Unknown_Missing'`. | Missingness is **MNAR (Missing Not At Random)** — gig workers, informal laborers, and retirees often omit occupation. Imputing with Mode ('Laborers') introduces severe synthetic bias. Explicit encoding preserves signal for tree splits & WoE binning. |
-| `EXT_SOURCE_1, 2, 3` | External bureau scores (56.4% missing in Source 1, 19.8% in Source 3). | Imputed with Median + added binary flags `EXT_SOURCE_1_IS_MISSING`, `EXT_SOURCE_3_IS_MISSING`. | Missingness is MNAR (selective bureau report procurement by underwriters based on applicant tier). Missingness flags preserve underwriter screening signal for linear/survival models. |
-| `AMT_ANNUITY`, `AMT_GOODS_PRICE` | Missing in small fractions (<0.1%). | Imputed with sample Median. | Financial amount variables exhibit heavy right skewness; median preserves central tendency without outlier inflation. |
-| `CODE_GENDER == 'XNA'`, `NAME_FAMILY_STATUS == 'Unknown'` | 4 records in gender, 2 in family status. | Imputed with respective modes (`F` and `Married`). | Preserves entire dataset integrity without losing records ahead of ECOA/fairness audits. |
+Understanding the evaluation metrics used across the pipeline:
+
+* **ROC-AUC (Receiver Operating Characteristic - Area Under Curve)**: Measures the model's ability to rank-order risk. An AUC of 0.77 means the model ranks a randomly chosen defaulter higher than a non-defaulter 77% of the time.
+* **PR-AUC (Precision-Recall AUC)**: Critical for highly imbalanced datasets (our target is 92% negative). It measures the trade-off between capturing defaulters (Recall) without falsely flagging non-defaulters (Precision).
+* **KS-Statistic (Kolmogorov-Smirnov)**: Measures the maximum degree of separation between the score distributions of defaulters and non-defaulters. Higher is better.
+* **Brier Score**: Measures the accuracy of probabilistic predictions (Mean Squared Error of probabilities). Lower is better.
+* **Harrell's C-Index (Concordance Index)**: The survival analysis equivalent of ROC-AUC. It measures whether the model correctly orders the *timing* of events, accounting for right-censored data.
+* **Expected Loss (EL)**: The regulatory Basel II/III risk metric. $EL = PD \times LGD \times EAD$. It quantifies the expected dollar loss for the portfolio.
 
 ---
 
-## 🚀 How to Run Phase 1
+## 🛠️ Data Cleaning & Interview Defense Rationale Registry (Phase 1)
+
+| Anomaly / Feature | Treatment Applied | Interview-Ready Business & Theoretical Rationale |
+| :--- | :--- | :--- |
+| `DAYS_EMPLOYED == 365243` | Created flag, replaced with 0/NaN. | Legacy banking sentinel value for pensioners/unemployed. Preserves predictive signal while preventing linear weight distortion. |
+| `AMT_REQ_CREDIT_BUREAU_*` | Imputed with `0.0`. | Bureau APIs return NULL when no inquiry hits exist. Reflects 0 inquiries, not missing random data. |
+| `OCCUPATION_TYPE` | Imputed with `'Unknown_Missing'`. | Missingness is **MNAR** (gig workers, informal labor often omit). Explicit encoding preserves signal for tree splits. |
+| `EXT_SOURCE_1, 2, 3` | Imputed with Median + missing flags. | Missingness is MNAR (selective bureau pulls). Flags preserve underwriter screening signal. |
+| Gender/Family Status | Imputed with respective modes. | Preserves entire dataset integrity ahead of ECOA/fairness audits. |
+
+---
+
+## 🖥️ Interactive Dashboard (Phase 5)
+
+The intelligence layer is exposed via a Streamlit application featuring:
+1. **Client Risk Profiles**: Individual PD, LGD, EAD, EL.
+2. **Explainability**: SHAP-driven adverse action reasons (FCRA/ECOA compliant) and DiCE counterfactual interventions.
+3. **Portfolio Stress Testing**: Macroeconomic shocks applied to PD/LGD simulating Baseline, Adverse, and Severely Adverse CCAR scenarios.
+4. **Causal Interventions**: Uplift segmentation isolating Persuadables.
+
+## 🚀 How to Run the Pipeline
 
 ```bash
-# Activate virtual environment
+# 1. Activate virtual environment
 .\venv\Scripts\activate
 
-# Run full Phase 1 pipeline
-python run_phase1.py
+# 2. Run Test Suite
+pytest tests/ -v
+
+# 3. Run Pipeline Stages
+python run_phase1.py    # Phase 1: Data Foundation & EDA
+python run_phase2.py    # Phase 2: Feature Engineering & Baseline Models
+python run_phase3.py    # Phase 3: Survival Modeling (Time-to-Default)
+python run_stage7.py    # Stage 7: LGD, EAD & Expected Loss
+python run_phase4.py    # Phase 4: Advanced Intelligence & Governance
+
+# 4. Launch Dashboard
+streamlit run app.py
 ```
